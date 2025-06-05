@@ -45,16 +45,14 @@ export function Footer() {
             </p>
           </div>
 
-          <div>
-            <h3 className="font-bold mb-6 text-pure-white">Navigation</h3>
-            <div className="space-y-3 text-sm flex flex-col items-center justify-center gap-4">
+          <div className=" flex flex-col items-center justify-center gap-4">
+            <h3 className="font-bold text-pure-white">Navigation</h3>
               <Link href="/" className="text-pure-white hover:text-gold-glow transition-colors">
                 Home
               </Link>
               <Link href="/irish-sports-culture" className="text-pure-white hover:text-gold-glow transition-colors">
                 Irish Sports Culture
               </Link>
-            </div>
           </div>
 
           <div>
