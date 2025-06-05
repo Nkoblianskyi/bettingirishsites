@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --emerald-green: #15803d;
+  --gaelic-orange: #f97316;
+  --stone-black: #0f0f0f;
+  --pure-white: #fafafa;
+  --fog-gray: #f3f4f6;
+  --gold-glow: #ffd700;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .irish-gradient {
+    background: linear-gradient(135deg, var(--emerald-green) 0%, var(--gaelic-orange) 100%);
+  }
+
+  .gold-hover {
+    transition: all 0.3s ease;
+  }
+
+  .gold-hover:hover {
+    box-shadow: 0 0 20px var(--gold-glow);
+    transform: translateY(-2px);
+  }
+
+  .neon-accent {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  }
+
+  /* Irish flag background for all sections */
+  .irish-flag-bg {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .irish-flag-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(21, 128, 61, 0.1), rgba(255, 255, 255, 0.5), rgba(249, 115, 22, 0.1));
+    z-index: 0;
+  }
+}
