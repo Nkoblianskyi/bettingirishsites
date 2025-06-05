@@ -22,7 +22,7 @@ export const bookmakers = [
   {
     id: 3,
     name: "BoyleSports",
-    bonus: "Bet €10 → Get €40 in Free Bets",
+    bonus: "Bet €10 Get €30 + €10 Casino Bonus",
     rating: 4.9,
     url: "https://www.boylesports.com/",
     users: "29,105",
@@ -32,7 +32,7 @@ export const bookmakers = [
   {
     id: 4,
     name: "Spreadex",
-    bonus: "€60 in Free Bets",
+    bonus: "Join & get €60 in Free Bets",
     rating: 4.8,
     url: "https://www.spreadex.com/sports/en-GB/spread-betting",
     users: "27,876",
@@ -42,7 +42,7 @@ export const bookmakers = [
   {
     id: 5,
     name: "Midnite",
-    bonus: "Bet €10 → Get €30 in Free Bets",
+    bonus: "Bet €10 Get €20 + 50 Free Spins",
     rating: 4.7,
     url: "https://www.midnite.com/",
     users: "26,103",

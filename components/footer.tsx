@@ -98,7 +98,7 @@ export function Footer() {
             betting platforms. Licensed only. Irish only. Gambling can be addictive. Please play responsibly. Must be
             18+ to participate.
           </p>
-          <div className="mt-4 text-xs text-pure-white/50">© 2024 BettingIrishSites.com. All rights reserved.</div>
+          <div className="mt-4 text-xs text-pure-white/50">© 2025 BettingIrishSites.com. All rights reserved.</div>
         </div>
       </div>
     </footer>

@@ -135,7 +135,7 @@ export function IrishTopList() {
                 )}
                 <CardContent className="p-4">
                   <div className="flex items-center">
-                    <div className="w-16 h-16 flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-200 flex items-center justify-center mr-4">
+                    <div className="w-[100px] h-16 flex-shrink-0 bg-white rounded-lg shadow-sm border border-gray-200 flex items-center justify-center mr-4">
                       <img
                         src={bookie.logo || `/placeholder.svg?height=40&width=80&text=${bookie.name}`}
                         alt={`${bookie.name} logo`}
