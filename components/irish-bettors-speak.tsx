@@ -6,24 +6,32 @@ import { Quote, ChevronLeft, ChevronRight } from "lucide-react"
 
 const testimonials = [
   {
-    quote: "BetVictor pays fast, I trust them.",
+    quote: "Fast payouts and reliable service. I've never had issues with withdrawals.",
     author: "Michael, Dublin",
   },
   {
-    quote: "I switched from UK site to local Boyle — big difference.",
+    quote: "Switched from a Irish site to an Irish one — much better customer service and understanding of local sports.",
     author: "Sean, Cork",
   },
   {
-    quote: "Been using BetFred for years. Their odds on GAA are always competitive.",
+    quote: "Been using the same bookmaker for years. Their GAA odds are always competitive and fair.",
     author: "Liam, Galway",
   },
   {
-    quote: "Spreadex has the best in-play betting for rugby matches.",
+    quote: "The in-play betting features are excellent, especially for rugby matches.",
     author: "Conor, Limerick",
   },
   {
-    quote: "The mobile app from BoyleSports makes betting on the go so easy.",
+    quote: "Mobile app makes betting on the go so convenient. Clean interface and quick loading.",
     author: "Aoife, Belfast",
+  },
+  {
+    quote: "Great bonuses for new customers and regular promotions that actually add value.",
+    author: "Paddy, Waterford",
+  },
+  {
+    quote: "Customer support speaks Irish and understands our betting culture perfectly.",
+    author: "Siobhan, Donegal",
   },
 ]
 
