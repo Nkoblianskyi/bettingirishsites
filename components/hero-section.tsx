@@ -41,15 +41,6 @@ export function HeroSection() {
             Welcome to Betting Irish Top, one of the most popular online betting portals in the country.
           </p>
 
-          <div className="pt-2">
-            <Button
-              size="sm"
-              className="bg-pure-white text-emerald-green hover:bg-fog-gray font-bold text-sm px-4 py-2 rounded-lg shadow-lg"
-            >
-              ☘ Explore Rankings
-            </Button>
-          </div>
-
           <div className="flex items-center justify-center space-x-2 text-pure-white text-xs pt-1 drop-shadow-md">
             <span className="flex items-center">
               <div className="w-1 h-1 bg-green-400 rounded-full mr-1 animate-pulse"></div>

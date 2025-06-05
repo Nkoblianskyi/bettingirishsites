@@ -19,9 +19,9 @@ export function IrishTopList() {
   console.log("Bookmakers data:", bookmakers)
 
   return (
-    <section className="pt-4 pb-20 md:py-20 relative z-10 bg-gradient-to-r from-emerald-green/20 via-pure-white/50 to-gaelic-orange/20">
+    <section className="pt-4 pb-20 md:py-4 relative z-10 bg-gradient-to-r from-emerald-green/20 via-pure-white/50 to-gaelic-orange/20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-5 md:mb-16">
+        <div className="text-center mb-2 md:mb-4">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-stone-black mb-2 md:mb-4">
             <span className="block md:hidden text-base whitespace-nowrap">
               Top Betting Irish Sites — {getNextMonthDate()}
