@@ -27,8 +27,8 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center space-x-2 text-xs">
-            <div className="flex items-center bg-emerald-green/20 px-3 py-1 rounded-full border border-emerald-green/30">
-              <span className="text-lg mr-1">🇮🇪</span>
+            <div className="flex items-center bg-emerald-green/20 px-3 py-1 gap-2 rounded-full border border-emerald-green/30">
+              <Image src='/flag.png' alt="BettingIrishSites Logo" width={16} height={16} />
               <span className="text-pure-white font-medium">Irish Licensed</span>
             </div>
             <div className="flex items-center bg-pure-white/10 px-3 py-1 rounded-full border border-pure-white/20">
@@ -55,7 +55,7 @@ export function Header() {
               </Link>
             </nav>
 
-            <div className="mt-4 flex justify-between text-xs text-pure-white/80 border-t border-emerald-green/20 pt-4">
+            <div className="mt-4 gap-2 flex justify-between text-xs text-pure-white/80 border-t border-emerald-green/20 pt-4">
               <div className="flex items-center">
                 <Image src='/flag.png' alt="BettingIrishSites Logo" width={16} height={16} />
                 <span>Irish Licensed</span>
