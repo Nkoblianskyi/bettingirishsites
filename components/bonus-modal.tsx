@@ -39,7 +39,7 @@ export function BonusModal({ isOpen, onClose, bookmaker }: BonusModalProps) {
         <CardContent className="p-6 space-y-6">
           {/* Bookmaker Info */}
           <div className="text-center space-y-3">
-            <div className="w-24 h-20 mx-auto bg-white rounded-lg shadow-sm border border-gray-200 flex items-center justify-center">
+            <div className="w-20 h-20 mx-auto bg-white rounded-lg shadow-sm border border-gray-200 flex items-center justify-center">
               <img
                 src={`/placeholder.svg?height=60&width=80&text=${bookmaker.name}`}
                 alt={`${bookmaker.name} logo`}

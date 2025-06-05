@@ -5,7 +5,9 @@ import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { CookieBanner } from "@/components/cookie-banner"
+import { BonusModal } from "@/components/bonus-modal"
 import { DelayedModal } from "@/components/delayed-modal"
+
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -27,7 +29,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <CookieBanner />
-        <DelayedModal />
+        <DelayedModal/>
       </body>
     </html>
   )

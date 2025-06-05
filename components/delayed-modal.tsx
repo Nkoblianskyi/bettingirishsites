@@ -70,23 +70,22 @@ export function DelayedModal() {
                 <div className="md:hidden flex items-center p-3">
                   {/* Rank Badge */}
                   <div
-                    className={`w-10 h-10 flex items-center justify-center font-bold text-sm rounded-full shadow-lg mr-3 flex-shrink-0 ${
-                      index === 0
+                    className={`w-10 h-10 flex items-center justify-center font-bold text-sm rounded-full shadow-lg mr-3 flex-shrink-0 ${index === 0
                         ? "bg-gradient-to-r from-gold-glow to-yellow-400 text-stone-black"
                         : index === 1
                           ? "bg-gradient-to-r from-emerald-500 to-emerald-600 text-white"
                           : "bg-gradient-to-r from-gaelic-orange to-red-500 text-white"
-                    }`}
+                      }`}
                   >
                     {index === 0 ? "👑" : `#${index + 1}`}
                   </div>
 
                   {/* Logo */}
-                  <div className="w-18 h-18 bg-gradient-to-br from-fog-gray to-white rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                  <div className="w-16 h-12 bg-gradient-to-br from-fog-gray to-white rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
                     <Image
                       src={site.logo || "/placeholder.svg"}
                       alt={site.name}
-                      width={80}
+                      width={70}
                       height={50}
                       className="max-w-full max-h-full object-contain drop-shadow-sm"
                     />
@@ -101,18 +100,15 @@ export function DelayedModal() {
                           ★
                         </span>
                       ))}
-                      <span className="text-stone-black text-xs font-bold ml-1">4.9</span>
+                      <span className="text-stone-black text-xs font-bold ml-1">{site.rating}</span>
                     </div>
                     <div
-                      className={`text-xs font-bold px-2 py-1 rounded text-center ${
-                        index === 0
+                      className={`text-xs font-bold px-2 py-1 rounded text-center ${index === 0
                           ? "bg-gradient-to-r from-gold-glow to-yellow-500 text-stone-black"
                           : "bg-gradient-to-r from-emerald-500 to-emerald-600 text-white"
-                      }`}
+                        }`}
                     >
-                      {site.id === 1 && "€30 + €10 Casino"}
-                      {site.id === 2 && "€20 + 50 Spins"}
-                      {site.id === 3 && "€50 Free Bet"}
+                      {site.bonus}
                     </div>
                   </div>
 
@@ -121,11 +117,10 @@ export function DelayedModal() {
                     href={site.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`px-4 py-2 rounded-xl text-xs font-bold transition-all shadow-lg ml-3 flex-shrink-0 ${
-                      index === 0
+                    className={`px-4 py-2 rounded-xl text-xs font-bold transition-all shadow-lg ml-3 flex-shrink-0 ${index === 0
                         ? "bg-gradient-to-r from-gold-glow to-yellow-500 hover:from-yellow-500 hover:to-gold-glow text-stone-black"
                         : "bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-500 text-white"
-                    }`}
+                      }`}
                   >
                     Claim
                   </a>
@@ -136,13 +131,12 @@ export function DelayedModal() {
                   {/* Rank Badge */}
                   <div className="relative">
                     <div
-                      className={`absolute -top-2 -right-2 w-10 h-10 flex items-center justify-center font-bold text-sm z-10 rounded-full shadow-lg ${
-                        index === 0
+                      className={`absolute -top-2 -right-2 w-10 h-10 flex items-center justify-center font-bold text-sm z-10 rounded-full shadow-lg ${index === 0
                           ? "bg-gradient-to-r from-gold-glow to-yellow-400 text-stone-black"
                           : index === 1
                             ? "bg-gradient-to-r from-emerald-500 to-emerald-600 text-white"
                             : "bg-gradient-to-r from-gaelic-orange to-red-500 text-white"
-                      }`}
+                        }`}
                     >
                       {index === 0 ? "👑" : `#${index + 1}`}
                     </div>
@@ -152,8 +146,8 @@ export function DelayedModal() {
                       <Image
                         src={site.logo || "/placeholder.svg"}
                         alt={site.name}
-                        width={70}
-                        height={35}
+                        width={120}
+                        height={70}
                         className="max-w-full max-h-full object-contain drop-shadow-sm"
                       />
                     </div>
@@ -166,32 +160,12 @@ export function DelayedModal() {
 
                   {/* Bonus */}
                   <div
-                    className={`text-white p-3 text-sm font-bold text-center h-20 flex items-center justify-center ${
-                      index === 0
+                    className={`text-white p-3 text-sm font-bold text-center h-20 flex items-center justify-center ${index === 0
                         ? "bg-gradient-to-r from-gold-glow to-yellow-500 text-stone-black"
                         : "bg-gradient-to-r from-emerald-500 to-emerald-600"
-                    }`}
+                      }`}
                   >
-                    {site.id === 1 && (
-                      <div className="leading-tight">
-                        Bet €10 Get €30 +<br />
-                        €10 Casino Bonus
-                      </div>
-                    )}
-                    {site.id === 2 && (
-                      <div className="leading-tight">
-                        Bet €10 Get €20 + 50
-                        <br />
-                        Free Spins
-                      </div>
-                    )}
-                    {site.id === 3 && (
-                      <div className="leading-tight">
-                        Bet €10
-                        <br />
-                        Get €50
-                      </div>
-                    )}
+                    {site.bonus}
                   </div>
 
                   {/* Rating */}
@@ -202,7 +176,7 @@ export function DelayedModal() {
                           ★
                         </span>
                       ))}
-                      <span className="text-stone-black text-sm font-bold ml-1">4.9</span>
+                      <span className="text-stone-black text-sm font-bold ml-1">{site.rating}</span>
                     </div>
                   </div>
 
@@ -212,11 +186,10 @@ export function DelayedModal() {
                       href={site.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`block w-full py-3 rounded-xl text-base font-bold transition-all text-center shadow-lg ${
-                        index === 0
+                      className={`block w-full py-3 rounded-xl text-base font-bold transition-all text-center shadow-lg ${index === 0
                           ? "bg-gradient-to-r from-gold-glow to-yellow-500 hover:from-yellow-500 hover:to-gold-glow text-stone-black"
                           : "bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-500 text-white"
-                      }`}
+                        }`}
                     >
                       🎯 Claim Now
                     </a>
